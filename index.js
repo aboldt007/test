@@ -301,7 +301,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_2543pxWorld_map_with_four_colourssvg.png", id:"_2543pxWorld_map_with_four_colourssvg"}
+		{src:"images/_2543pxWorld_map_with_four_colourssvg.png?1588284564776", id:"_2543pxWorld_map_with_four_colourssvg"}
 	],
 	preloads: []
 };
