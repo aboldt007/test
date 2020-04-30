@@ -219,9 +219,6 @@ p.frameBounds = [rect, rect];
 		this.clearAllSoundStreams();
 		 
 		this.stop();
-		this.stop();
-		
-		
 		var _this = this;
 		_this.stop();
 		
