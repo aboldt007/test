@@ -259,7 +259,6 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 				zoom = false;
 			}
 		});
-		alert("test");
 	}
 	this.frame_1 = function() {
 		this.___loopingOver___ = true;
@@ -271,7 +270,7 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 	// Camera
 	this.___camera___instance = new lib.___Camera___();
 	this.___camera___instance.name = "___camera___instance";
-	this.___camera___instance.setTransform(568,320);
+	this.___camera___instance.setTransform(1051.85,504.1,1.5609,1.5609);
 	this.___camera___instance.depth = 0;
 	this.___camera___instance.visible = false;
 
@@ -280,7 +279,7 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 	// Layer_1_obj_
 	this.Layer_1 = new lib.Scene_1_Layer_1();
 	this.Layer_1.name = "Layer_1";
-	this.Layer_1.setTransform(1031.5,549.5,1,1,0,0,0,1031.5,549.5);
+	this.Layer_1.setTransform(1031.5,549.45,0.6407,0.6407,0,0,0,1775.3,862.2);
 	this.Layer_1.depth = 0;
 	this.Layer_1.isAttachedToCamera = 0
 	this.Layer_1.isAttachedToMask = 0
@@ -293,7 +292,7 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(328,319,1975,780);
+p.nominalBounds = new cjs.Rectangle(328,320,1975,779);
 // library properties:
 lib.properties = {
 	id: 'FE4C6D596DBD4D8886874C3F3595A4FD',
