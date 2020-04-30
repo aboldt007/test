@@ -259,6 +259,7 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 				zoom = false;
 			}
 		});
+		alert("test");
 	}
 	this.frame_1 = function() {
 		this.___loopingOver___ = true;
