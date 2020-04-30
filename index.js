@@ -217,7 +217,7 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 		this.clearAllSoundStreams();
 		 
 		this.stop();
-		
+		/*
 		var _this = this;
 		_this.stop();
 		
