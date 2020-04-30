@@ -218,47 +218,6 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 		 
 		this.stop();
 		this.stop();
-		
-		
-		
-		var _this = this;
-		_this.stop();
-		
-		var CameraObject = AdobeAn.VirtualCamera.getCamera(exportRoot);
-		
-		var env = {
-			camInitX: CameraObject.camera.x,
-			camInitY: CameraObject.camera.y
-		};
-		
-		var zoom = false;
-		var dpr = window.devicePixelRatio;
-		
-		_this.on("click", function(event) {
-			console.log(CameraObject);
-			console.log(env);
-			if(!zoom) {
-				createjs.Tween.get(CameraObject.camera, {
-					override: true
-				}).to({
-					x: event.stageX / dpr,
-					y: event.stageY / dpr,
-					scaleX: 0.5,
-					scaleY: 0.5
-				}, 1000, createjs.Ease.circIn);
-				zoom = true;
-			} else {
-				createjs.Tween.get(CameraObject.camera, {
-					override: true
-				}).to({
-					x: env.camInitX,
-					y: env.camInitY,
-					scaleX: 1,
-					scaleY: 1
-				}, 1000, createjs.Ease.circIn);
-				zoom = false;
-			}
-		});
 	}
 	this.frame_1 = function() {
 		this.___loopingOver___ = true;
