@@ -2,6 +2,7 @@
 
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
+var rect; // used to reference frame bounds
 lib.ssMetadata = [];
 
 
@@ -175,7 +176,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,2543,1099);
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
+p.nominalBounds = rect = new cjs.Rectangle(-569,-321,1138,642);
+p.frameBounds = [rect, rect];
 
 
 // stage content:
@@ -219,7 +221,6 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 		this.stop();
 		this.stop();
 		
-		alert("new");
 		
 		var _this = this;
 		_this.stop();
@@ -292,7 +293,8 @@ p.nominalBounds = new cjs.Rectangle(-569,-321,1138,642);
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(328,320,1975,779);
+p.nominalBounds = rect = new cjs.Rectangle(328,320,2543,1099);
+p.frameBounds = [rect, new cjs.Rectangle(731.7,323.1,1776.3,1002.1)];
 // library properties:
 lib.properties = {
 	id: 'FE4C6D596DBD4D8886874C3F3595A4FD',
