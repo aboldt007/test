@@ -14,7 +14,6 @@ var oof = new Hammer.Manager(myElement);
 // create a pinch and rotate recognizer
 // these require 2 pointers
 var pinch = new Hammer.Pinch();
-var rotate = new Hammer.Rotate();
 
 // we want to detect both the same time
 pinch.recognizeWith(rotate);
