@@ -222,6 +222,18 @@ p.frameBounds = [rect, rect];
 		var _this = this;
 		_this.stop();
 		
+		var myElement = document.getElementById('myElement');
+		
+		// create a simple instance
+		// by default, it only adds horizontal recognizers
+		var mc = new Hammer(myElement);
+		
+		// listen to events...
+		mc.on("panleft panright tap press", function(ev) {
+		    myElement.textContent = ev.type +" gesture detected.";
+		});
+		
+		/*
 		var CameraObject = AdobeAn.VirtualCamera.getCamera(exportRoot);
 		
 		var env = {
@@ -301,7 +313,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_2543pxWorld_map_with_four_colourssvg.png?1588284564776", id:"_2543pxWorld_map_with_four_colourssvg"}
+		{src:"images/_2543pxWorld_map_with_four_colourssvg.png", id:"_2543pxWorld_map_with_four_colourssvg"}
 	],
 	preloads: []
 };
